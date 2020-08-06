@@ -21,10 +21,10 @@ const Landing: React.FC = () => {
 
             <div className="buttons-container">
                 <a href="/estudar" className="study"> 
-                    Estudaar<img src={studyIcon} alt="estudar"/>
+                    Estudar<img src={studyIcon} alt="estudar"/>
                 </a>
                 <a href="/estudar" className="give-classes">
-                    Estudar<img src={giveClassesIcon} alt="estudar"/>
+                    Dar aulas<img src={giveClassesIcon} alt="Dar aulas"/>
                 </a>
             </div>
 
