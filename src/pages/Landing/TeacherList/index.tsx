@@ -1,29 +1,36 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
-
-import logoImg  from '../../../assets/images/logo.svg';
-import backIcon  from '../../../assets/images/icons/back.svg';
 
 import './styles.css';
 
+import PageHeader from '../../../components/PageHeader';
+import TeacherItem from '../../../components/TeacherItem';
 
 const TeacherList: React.FC = () => {
   return (
       <div id="page-teacher-list" className="container">
-        <header className="page-header">
+        <PageHeader title="Estes são os Proffys disponiveis">
+          <form id="search-teachers">
+            <div className="input-block">
+              <label htmlFor="subject">Materia</label>
+              <input id="subject" type="text"/>
+            </div>
+            <div className="input-block">
+              <label htmlFor="week-day">Dia da semana</label>
+              <input id="week-day" type="text"/>
+            </div>
+            <div className="input-block">
+              <label htmlFor="time">Hora</label>
+              <input id="time" type="text"/>
+            </div>
+          </form>
+        </PageHeader>
 
-          <div className="top-bar-container">
-            <Link to="/">
-              <img src={backIcon} alt="voltar"/>
-            </Link>
-            <img src={logoImg} alt="proffy"/>
-          </div>
+        <main>
+          <TeacherItem/>
+          <TeacherItem/>
+          <TeacherItem/>
+        </main>
 
-          <div className="header-content">
-            <strong>eeeeeeeeeeeeeeeeeeeeeeeee</strong>
-          </div>
-
-        </header>
       </div>
   );
 }

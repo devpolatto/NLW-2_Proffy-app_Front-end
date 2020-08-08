@@ -1,10 +1,12 @@
 import React from 'react';
 
-// import { Container } from './styles';
+import PageHeader from '../../../components/PageHeader';
 
 const TeacherFomr: React.FC = () => {
   return (
-      <h1>teacher form</h1>
+    <div id="page-teacher-list" className="container">
+      <PageHeader title="dar aulas"/>
+    </div>
   );
 }
 
